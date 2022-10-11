@@ -6,7 +6,7 @@ import './Home.css'
 
 const Home = () => {
     const carts = useLoaderData().data;
-    console.log(carts);
+    // console.log(carts);
     return (
 
         <div>
