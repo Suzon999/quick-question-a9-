@@ -11,7 +11,7 @@ const Home = () => {
 
         <div>
             <Banner></Banner>
-            <div className='cart-container'>
+            <div className='cart-container container'>
                 {
                     carts.map(cart => <Topics
                         kye={cart.id}
