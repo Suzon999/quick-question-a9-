@@ -4,7 +4,7 @@ import './Blog.css'
 const Blog = () => {
     return (
         <div>
-
+            <h1>blog component</h1>
         </div>
     );
 };
