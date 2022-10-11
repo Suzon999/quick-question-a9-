@@ -16,7 +16,8 @@ const Header = () => {
                         {/* <Nav.Link active to= '/topics'>Topics</Nav.Link>
                         <Nav.Link active to="/Statistics">Statistics</Nav.Link>
                         <Nav.Link active to="/Blog">Blog</Nav.Link> */}
-                        <Link className='fs-5 text-decoration-none' to='/topics' >Topics</Link>
+                        <Link className='fs-5 mx-5 text-decoration-none' to='/' >Home</Link>
+                        <Link className='fs-5 text-decoration-none' to='/' >Topics</Link>
                         <Link className='mx-5 fs-5 text-decoration-none' to='/statistics' >Statistics</Link>
                         <Link className='fs-5 text-decoration-none' to='/blog' >Blog</Link>
 

@@ -1,10 +1,21 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
+// import { FaArrowRight } from 'react-icons/fa';
 import './Topics.css'
 
-const Topics = () => {
+const Topics = ({ cart }) => {
+    const { name, logo, total, id } = cart;
     return (
-        <div>
-            <h1>topics component</h1>
+        <div className='cart'>
+            <div>
+                <img src={logo} alt="" />
+                <h3>{name} </h3>
+                <p className='text-primary'>Quiz : {total} </p>
+            </div>
+            <div className='btn-icon ps-2'>
+                <Button className='px-5 py-2 fs-4 btn-cart' variant="primary"> Start Practice  </Button>{' '}
+
+            </div>
         </div>
     );
 };
