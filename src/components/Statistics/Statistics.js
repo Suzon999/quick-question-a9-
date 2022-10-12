@@ -1,4 +1,5 @@
 import React from 'react';
+import './Statistics.css'
 import { useLoaderData } from 'react-router-dom';
 
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
@@ -6,8 +7,8 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 const Statistics = () => {
     const values = useLoaderData().data;
     return (
-        <div>
-            <LineChart width={500} height={300} data={values} >
+        <div className='rechart my-5 text-center'>
+            <LineChart width={700} height={400} data={values} >
                 <XAxis dataKey="name" />
                 <YAxis />
                 <Tooltip />

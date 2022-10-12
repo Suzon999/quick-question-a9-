@@ -1,5 +1,5 @@
 .quiz-container {
-    align-items: center;
+    text-align: center;
     width: 300px;
     border: 1px solid lightgray;
     margin-bottom: 30px;
@@ -9,14 +9,25 @@
 }
 
 .option {
-
+    align-items: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 30px;
 }
 
 .eye-icon {
+    font-size: 20px;
     display: flex;
     justify-content: space-between;
 
+}
+
+.option-p {
+    background-color: rgb(80, 119, 228);
+    color: white;
+    font-size: 20px;
+    width: 400px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    align-items: center;
 }

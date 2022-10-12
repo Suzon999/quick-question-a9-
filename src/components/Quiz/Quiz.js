@@ -4,7 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './Quiz.css'
 const Quiz = ({ quiz }) => {
-    const [isShow, setIsShow] = useState(false)
+    const [isShow, setIsShow] = useState(false);
     const { options, question, correctAnswer } = quiz;
     console.log(quiz);
     const hendleAns = (ans) => {
@@ -26,7 +26,7 @@ const Quiz = ({ quiz }) => {
             </div>
             <div className='option'>
                 {
-                    options.map(option => <p onClick={() => hendleAns(option)}>{option} </p>)
+                    options.map(option => <p className='option-p' onClick={() => hendleAns(option)}>{option} </p>)
                 }
             </div>
             <ToastContainer />
