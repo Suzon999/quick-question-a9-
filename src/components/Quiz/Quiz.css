@@ -1,14 +1,11 @@
 .quiz-container {
-    width: 500pxn;
-    height: 300px;
+    align-items: center;
+    width: 300px;
     border: 1px solid lightgray;
     margin-bottom: 30px;
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 40px 30px;
     box-shadow: 5px 6px 20px;
-
-
-
 }
 
 .option {
@@ -21,4 +18,5 @@
 .eye-icon {
     display: flex;
     justify-content: space-between;
+
 }
