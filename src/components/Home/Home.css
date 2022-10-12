@@ -10,6 +10,8 @@
     .cart-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        margin-left: 40px;
+        width: 400px;
+        height: auto;
+
     }
 }
