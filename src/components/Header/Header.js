@@ -1,4 +1,5 @@
 import React from 'react';
+import './Header.css'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -7,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar className='navber' bg="light" expand="lg">
             <Container>
                 <Navbar.Brand className='fs-3 fw-bold text-primary' href="#home">Quiz Learning School</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />

@@ -8,6 +8,10 @@
     box-shadow: 5px 6px 20px;
 }
 
+.question {
+    text-align: center;
+}
+
 .option {
     align-items: center;
     display: grid;
@@ -16,14 +20,20 @@
 }
 
 .eye-icon {
+    text-align: center;
     font-size: 20px;
     display: flex;
     justify-content: space-between;
 
 }
 
+.icon {
+    color: blue;
+}
+
 .option-p {
-    background-color: rgb(80, 119, 228);
+    background: linear-gradient(135deg, rgb(91, 171, 220) 30%, rgb(236, 60, 210));
+    /* background-color: rgb(80, 119, 228); */
     color: white;
     font-size: 20px;
     width: 400px;

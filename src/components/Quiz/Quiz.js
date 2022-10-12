@@ -6,7 +6,11 @@ import './Quiz.css'
 const Quiz = ({ quiz }) => {
     const [isShow, setIsShow] = useState(false);
     const { options, question, correctAnswer } = quiz;
-    console.log(quiz);
+    const handleAnsShow = () => {
+        !isShow && toast.success(correctAnswer)
+        setIsShow(!isShow);
+    }
+    // console.log(quiz);
     const hendleAns = (ans) => {
         if (correctAnswer === ans) {
             toast.success("wow !! your answers is right!!!");
@@ -15,14 +19,14 @@ const Quiz = ({ quiz }) => {
             toast.error("wrong ! your answers is wrong!!!!");
         }
     }
-    if (isShow) {
-        toast.success(`${correctAnswer}`);
-    }
+    // if (isShow) {
+    //     toast.success(`${correctAnswer}`);
+    // }
     return (
         <div className='quiz-container container mt-5'>
             <div className='eye-icon '>
-                <h3> Quiz :{question} </h3>
-                <p onClick={() => { setIsShow(true) }}><FaEye></FaEye> </p>
+                <h3 className="question" > Quiz :{question} </h3>
+                <p className='icon' onClick={() => { handleAnsShow(true) }}><FaEye></FaEye> </p>
             </div>
             <div className='option'>
                 {
